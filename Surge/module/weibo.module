@@ -13,8 +13,8 @@
 
 [Rule]
 # 收集用户信息，上传用户日志的请求
-URL-REGEX,"^https?:\/\/api\.weibo\.cn\/2\/(push\/active|client\/addlog_batch|ad\/preload)",REJECT-DROP
-URL-REGEX,"^https?:\/\/api-cloudim\.api\.weibo\.com\/v1\/log\/",REJECT-DROP
+URL-REGEX,"^https?:\/\/api\.weibo\.cn\/2\/(push\/active|client\/addlog_batch|ad\/preload)",REJECT
+URL-REGEX,"^https?:\/\/api-cloudim\.api\.weibo\.com\/v1\/log\/",REJECT
 # 微博开屏广告
 DOMAIN-SUFFIX,biz.weibo.com,REJECT
 DOMAIN,bootpreload.uve.weibo.com,REJECT
