@@ -7,9 +7,7 @@
 #!raw-url=https://raw.githubusercontent.com/iceloon/wool_scripts/main/Surge/module/weibo.module
 #!tg-channel=https://t.me/inaisi
 #!tag=去广告, 微博, fmz200
-#!system=ios
 #!date=2026-09-27 00:00:00
-#!requirement=CORE_VERSION>=20
 
 [Rule]
 # 收集用户信息，上传用户日志的请求
