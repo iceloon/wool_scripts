@@ -375,6 +375,9 @@ function removePage(data) {
 }
 
 function removeCards(data) {
+	if (Array.isArray(data.items)) {
+		data.items = data.items.filter(item => item.category !== 'group');
+	}
 	if (!data.cards) {
 		return;
 	}
