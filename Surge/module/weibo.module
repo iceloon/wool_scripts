@@ -50,8 +50,8 @@ DOMAIN,datacollection.uve.weibo.com,REJECT
 DOMAIN,adpinpai.video.weibocdn.com,REJECT
 
 [URL Rewrite]
-^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/(get-lbs-cell-info\.php|sdkconfig\.php) - reject
-^https?:\/\/m?api\.weibo\.c(n|om)\/2\/logservice\/service\? - reject
+^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/(get-lbs-cell-info\.php|sdkconfig\.php) _ reject
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/logservice\/service\? _ reject
 
 [Body Rewrite]
 http-response-jq ^https?:\/\/m?api\.weibo\.c(n|om)\/2\/cardlist\? 'del(.items[] | select(.category == "group"))'
